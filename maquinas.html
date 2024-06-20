@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/sitecafe_p2.css">
+    <script src="site_cafe.js"></script>
+    <title>Expresso do café</title>
+</head>
+
+<body>
+    <header class="imgLogo">
+        <img src="img/Logo_Pequeno.png" alt="">
+    </header>
+    <address class="ender">
+        Avedida Mochaccino, 10 <br />
+        Tel: (21) 1234-5678 <br />
+        contato@caffe.com.br
+    </address>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicial</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="#">Máquinas</a></li>
+            <li><a href="saches.html">Saches</a></li>
+            <li><a href="compras.html">Compras</a></li>
+        </ul>
+    </nav>
+    <table class="tabInfo">
+        <tr>
+            <th class="linTH" colspan="4">Máquinas de Café</th>
+        </tr>
+        <tr>
+            <th class="linTH">Tipo</th>
+            <th class="linTH">Modelo</th>
+            <th class="linTH">Foto</th>
+            <th class="linTH">Preço</th>
+        </tr>
+        <tr>
+            <th class="colTH">Dolce Gusto</th>
+            <td class="colTH"><a class="link" href="javascript:piccol()">Piccolo</a></td>
+            <td rowspan="4"><img id="imgvazio" src="img/Vazio.jpg" alt=""></td>
+            <td rowspan="4" id="preco"></td>
+        </tr>
+        <tr>
+            <th class="colTH" rowspan="2">Nespresso</th>
+            <td class="colTH"><a class="link" href="javascript:inissi()">Inissia C40</a></td>
+        </tr>
+        <tr>
+            <td class="colTH"><a class="link" href="javascript:uc50()">U C50</a></td>
+        </tr>
+        <tr>
+            <th class="colTH">Senseo</th>
+            <td class="colTH"><a class="link" href="javascript:hd78()">HD7811/96</a></td>
+        </tr>
+    </table>
+</body>
+
+</html>

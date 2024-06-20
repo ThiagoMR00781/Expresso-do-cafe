@@ -1,0 +1,198 @@
+body{
+    background-image: url(../img/Fundo.jpg);
+    color: #FFEEBB;
+    font-size: 16px;
+    font-family: Verdana, Liberation, Tahoma, sans-serif;
+}
+a, a:link{
+    text-decoration: none;
+    color: #FFEEBB;
+}
+a:visited{
+    color: #DDCC99;
+}
+ul{
+    line-height: 200%;
+    color: #FFEEBB;
+    margin-top: 30px;
+    list-style-type: circle;
+}
+.ender{
+    text-align: right;
+    font-size: 16px;
+    line-height: 150%;
+    float: right;
+}
+.apres{
+    text-align: center;
+}
+.imgLogo{
+    border-bottom: solid 3px;
+    width: 35%;
+    padding-bottom: 15px;    
+}
+header{
+    display: block;
+    margin-bottom: 1px;
+}
+nav{
+    display: block;
+    width: 20%;
+    float: left;
+}
+section{
+    display: block;
+    width: 77%;
+    float: right;
+}
+.historia{
+    text-align: justify;
+}
+.imgesq{
+    margin: 12px 12px 4px 0px;
+    float: left;
+}
+.imgdir{
+    margin: 12px 0px 4px 12px;
+    float: right;
+}
+.fonte{
+    text-align: right;
+    font-style: italic; 
+}
+.tabInfo{
+    border-collapse: collapse;
+    margin-top: 6px;
+    background-color: #FFFFFF;
+    color: #573218;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+td, th{
+    border: 2px solid #664422;
+    padding: 6px 12px 6px 12px;
+}
+.linTH{
+    color: #FFFFFF;
+    background-color: #907968;
+    vertical-align: middle;
+    justify-content: center;
+}
+.colTH{
+    color: #573218;
+    background-color: #EACEAC;
+    text-align: left;
+}
+#preco{
+    color: #CC0000;
+    font-weight: bold;
+    vertical-align: middle;
+}
+/* pagina  */
+
+form{
+    float: right;
+}
+fieldset{
+    background-color: #907968;
+}
+.fsForm{
+    width: 524px;
+    text-align: center;
+    clear: both;
+}
+.fsResDir{
+    width: 280px;
+    height: 280px;
+    float: right;
+}
+.fsResEsq{
+    width: 200px;
+    height: 280px;
+    float: left;
+    display: block;
+}
+.alinhado_esq{
+    float: left;
+    text-align: justify;
+    width: 90px;
+}
+.alinhado_dir{
+    width: 70px;
+    margin-left: 28px;
+    text-align: justify;
+}
+input, select{
+    border-radius: 4px;
+    border-color: none;
+    border: 0; 
+} 
+textarea{
+    width: 200px;
+    height: 80px;
+}
+optgroup{
+    font-style: italic;
+    font-weight: bolder;
+}
+button{
+    border: 0;
+    border-radius: 4px;
+    padding: 4px;
+} 
+.direita {
+    float: right;
+    margin-left: 80%;
+    margin-top: 16px;
+}
+.inpdir{
+    float: right;
+}
+#tamanho_input_1{
+    width: 200px;
+}
+#tamanho_input_2{
+    width: 120px;
+}
+#tamanho_input_3{
+    width: 120px;
+}
+#tamanho_input_4{
+    width: 200px;
+}
+#tamanho_input_5{
+    width: 400px;
+}
+#tamanho_input_6{
+    width: 80px;   
+}
+#tamanho_input_7{
+    width: 22px;
+}
+#tamanho_input_8{
+    width: 44px;
+}
+#tamanho_input_9{
+    width: 120px;
+}
+#decimais{
+    line-height: 200%;
+    color: #FFEEBB;
+    margin-top: 30px;
+    list-style-type: decimal;
+}
+#imgdolce{
+    width: 180px;
+    height: 180px;
+}
+#imgsenso{
+    width: 180px;
+    height: 180px;
+}
+#imgnespr{
+    width: 180px;
+    height: 180px;
+}
+#imgvazio{
+    width: 200px;
+    height: 200px;
+}

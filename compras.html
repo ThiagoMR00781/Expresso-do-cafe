@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/sitecafe_p2.css">
+    <script src="site_cafe.js"></script>
+    <title>Expresso do café</title>
+</head>
+
+<body id="pag-comp">
+    <header class="imgLogo"></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicial</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="maquinas.html">Máquinas</a></li>
+            <li><a href="saches.html">Saches</a></li>
+            <li><a href="#">Compras</a></li>
+        </ul>
+    </nav>
+
+    <form id="form_compras">
+        <fieldset class="fsForm">
+            <legend>Dados de Identificação</legend>
+
+            <label for="" class="alinhado_esq">Name:</label>
+            <input id="tamanho_input_1" type="text" class="alinhado_esq" name="nome">
+
+            <label for="">Cpf:</label>
+            <input onchange="validaCPF()" id="tamanho_input_2" type="text" name="cpf" class="alinhado_dir"> 
+            <br/><br/>
+
+            <label for="" class="alinhado_esq">Telefone:</label>
+            <input id="tamanho_input_3" type="tel" class="alinhado_esq" name="tel" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" />
+            
+            <label for="">Email:</label>
+            <input id="tamanho_input_4" type="email" name="email" class="alinhado_dir" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <br/><br/> 
+
+            <label for="ender" class="alinhado_esq">Endereço:</label>
+            <input id="tamanho_input_5" type="text" class="alinhado_esq">
+           
+        </fieldset>
+        <fieldset class="fsResEsq">
+            <!--prod-->
+            <legend>Produtos</legend>
+
+            <label for="nivel">Máquinas:</label>
+            <select name="maquinas" id="maquinas" onchange="escreve_maquina()">
+                <option value="">-</option>
+                <optgroup label="Dolce Gusto">
+                    <option  id="picc">Piccolo</option>
+                </optgroup>
+                <optgroup label="Nespresso">
+                    <option id="iniss">Inissia C40</option>
+                    <option id="uc50">U C50</option>
+                </optgroup>
+                <optgroup label="Senseo">
+                    <option id="hd78">HD7811/96</option>
+                </optgroup>
+            </select>
+            <br /><br />
+            <label for="nivel">Sachês:</label>
+            <select name="saches" id="saches" onchange="escreve_saches()">
+                <option value="">-</option>
+                <optgroup label="Dolce Gusto">
+                    <option id="expr">Expresso</option>
+                    <option id="desc">Descafeinado</option>
+                </optgroup>    
+                <optgroup label="Nespresso">
+                    <option id="liva">Livanto</option>
+                    <option id="rist">Ristretto</option>
+                    <option id="vani">Vanilio</option>
+                </optgroup>    
+                <optgroup label="Senseo">
+                    <option id="clas">Clássico</option>
+                    <option id="inte">Intenso</option>
+                </optgroup>
+            </select>
+            <br /><br />
+            <label for="">Selecionados:</label>
+            <input type="reset" onclick="apaga()">
+            <br /><br />
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            <br /><br />
+            <label for="">Valor:</label>
+            <input class="inpdir" size="5" type="text" name="tamanho_input_6" id="tamanho_input_6">
+        </fieldset>
+        <fieldset class="fsResDir">
+            <legend>Forma de Pagamento</legend>
+            <br/>
+
+            <input type="radio" name="pag" id="" value="car"> Cartão
+            <input type="radio" name="pag" id="" value="cheq"> Cheque
+            <input type="radio" name="pag" id="" value="dinhe"> Dinheiro
+            <br/><br/><br/>
+
+            <fieldset>
+                <legend>Dados do Cartão</legend>
+                <br/>
+                <input type="radio" name="dado" id="visa" value="visa"> <img src="img/visa.png" alt="">
+
+                <input type="radio" name="dado" id="master" value="master"> <img src="img/master.png" alt="">
+
+                <input type="radio" name="dado" id="amex" value="amex"> <img src="img/amex.png" alt="">
+                <br/><br />
+
+                <label for="val">Validade:</label>
+                <input type="number" name="valtext" id="tamanho_input_7"> / <input type="number"
+                    name="valtext2" id="tamanho_input_8">
+                <br/><br/>
+
+                <label for="num">Número:</label>
+                <input type="number" name="nun" id="tamanho_input_9">
+            </fieldset>
+        </fieldset>
+        <div class="direita">
+            <button type="submit" name="bt-enviar" id="bt-enviar">Enviar</button>
+            <button type="reset" name="bt-limpar" id="bt-limpar">Limpar</button>
+        </div>
+    </form>
+</body>
+</html>
